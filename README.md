@@ -13,7 +13,7 @@ Une calculatrice moderne développée avec **Flutter & Dart**, avec une interfac
 
 > Installer directement sur votre téléphone Android :
 
-**👉 [Télécharger Calculator App v1.0.0](https://github.com/mohameden19961/calculator/releases/download/v1.0.0/app-release.apk)**
+**👉 [Télécharger Calculator App v1.0.0](https://github.com/mohameden19961/calculator/raw/main/app-release.apk)**
 
 > ⚠️ **Note :** Activez *"Sources inconnues"* dans **Paramètres → Sécurité** avant l'installation.
 
@@ -54,36 +54,18 @@ Une calculatrice moderne développée avec **Flutter & Dart**, avec une interfac
 
 ---
 
-## 🚀 Lancer le projet en local
+## 📦 Générer l'APK toi-même
 
-### Prérequis
-
-- [Flutter SDK](https://docs.flutter.dev/get-started/install) installé
-- Android Studio ou VS Code
-- Un émulateur Android ou un téléphone connecté
-
-### Installation
+Si tu veux recompiler depuis le code source :
 
 ```bash
-# 1. Cloner le dépôt
+# 1. Cloner le code source Flutter (séparé)
 git clone https://github.com/mohameden19961/calculator.git
 
-# 2. Aller dans le dossier
-cd calculator
-
-# 3. Installer les dépendances
+# 2. Installer les dépendances
 flutter pub get
 
-# 4. Lancer l'application
-flutter run
-```
-
----
-
-## 📦 Générer l'APK
-
-```bash
-# APK de release (optimisé)
+# 3. Builder l'APK
 flutter build apk --release
 
 # L'APK se trouve ici :
@@ -96,14 +78,8 @@ flutter build apk --release
 
 ```
 calculator/
-│
-├── lib/
-│   └── main.dart          # Code principal de l'application
-│
-├── android/               # Configuration Android
-├── ios/                   # Configuration iOS
-├── pubspec.yaml           # Dépendances Flutter
-└── README.md              # Ce fichier
+├── app-release.apk    # Application Android
+└── README.md          # Ce fichier
 ```
 
 ---
